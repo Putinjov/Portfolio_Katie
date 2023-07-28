@@ -1,0 +1,55 @@
+%container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: $mobile-breakpoint;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: $tablet-breakpoint;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: $desktop-breakpoint;
+  }
+}
+
+%button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 135px;
+  height: 37px;
+  padding: 0;
+
+  font-family: "Suravaram";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: $white-color;
+
+  background-color: $color-accent;
+  border: none;
+  box-shadow: 0px 4px 4px #00000026;
+  border-radius: 15px;
+  cursor: pointer;
+
+  transition-property: background-color;
+  transition-duration: $anim-time;
+  transition-timing-function: $anim-ft;
+
+  &:hover,
+  &:focus {
+    background-color: $button-active-color;
+  }
+
+  @media screen and (min-width: 768px){
+    width: 273px;
+    height: 79px;
+  }
+}

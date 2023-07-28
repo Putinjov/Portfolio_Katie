@@ -1,0 +1,11 @@
+@mixin section($pt: 48px, $pb: 48px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+}
+
+@mixin grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $gap;
+}
+

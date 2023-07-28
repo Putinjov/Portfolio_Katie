@@ -1,0 +1,98 @@
+.footer{
+    background-color: $footer-bgc;
+    padding-top: 48px;
+}
+
+.contacts-title{
+    display: block;
+    color:$white-color;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        line-height: 1.15;
+    }
+}
+
+.footer-contacts{
+    margin: 0 auto;
+    @media (min-width:768px) {
+        max-width: 700px;
+    }
+
+    @media (max-width:1200px) {
+        max-width: 500px;
+    }
+}
+
+.contacts-form__label {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+}
+
+.contacts-form__wrapper {
+    position: relative;
+
+    margin-bottom: 10px;
+}
+
+.contacts-form__field {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+
+    border: 1px solid $white-color;
+    border-radius: 4px;
+    outline: 1px solid transparent;
+
+    transition-property: border;
+    transition-duration: $anim-time;
+    transition-timing-function: $anim-ft;
+
+    background-color: $footer-bgc;
+
+    &:focus {
+        border: 1px solid $color-title-light;
+    }
+}
+
+.contacts-form__icon {
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+
+    fill: $white-color;
+
+    transition-property: fill;
+    transition-duration: $anim-time;
+    transition-timing-function: $anim-ft;
+}
+
+.contacts-form__field:focus+.contacts-form__icon {
+    fill: $color-title-light;
+}
+
+
+.contacts-form__button{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 48px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white-color;
+    margin: 0 auto;
+    font-size: 15px;
+}

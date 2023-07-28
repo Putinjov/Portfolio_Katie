@@ -1,0 +1,83 @@
+.section-gallery{
+    padding-top: 48px;
+    padding-bottom: 48px;
+}
+.gallery-title{
+    color: $color-title-dark;
+    font-size: 48px;
+    letter-spacing: 0.016em;
+    text-transform: uppercase;
+    text-align: right;
+
+    @media (min-width: 768px) {
+            font-size: 96px;
+        }
+    
+    @media (min-width: 1200px) {
+        font-size: 128px;
+        }
+}
+
+.gallery img {
+    width: 100%;
+    border: 5px solid white;
+}
+
+.gallery {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 15%;
+    padding: 5px;
+
+}
+
+.column img {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.column img:active {
+    height: auto;
+    width: auto;
+    max-width: 80%;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    border: 10px solid #fff;
+    margin: 0px;
+    box-shadow: 0 0 1000px 1000px #fff8;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+
+@media (max-width: 768px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .column {
+        flex: 100%;
+    }
+}
+
+.gallery-open{
+    display: block;
+    color: $color-accent;
+    font-family: 'Suravaram';
+    font-size: 20px;
+    text-align: center;
+
+    @media (min-width: 768px) {
+            font-size: 30px;
+        }
+    
+        @media (min-width: 1200px) {
+            font-size: 40px;
+        }
+}

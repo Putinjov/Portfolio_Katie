@@ -1,0 +1,36 @@
+.site-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.nav-list__link {
+  position: relative;
+
+  font-family: 'Suravaram';
+  font-size: 24px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition-property: color;
+  transition-duration: $anim-time;
+  transition-timing-function: $anim-ft;
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+}
+
+.nav-list__link {
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}

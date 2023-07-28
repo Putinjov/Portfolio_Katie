@@ -1,0 +1,74 @@
+.section-hero{
+    background-image: url("../../images/hero_bg.png");
+    background-size: cover;
+}
+
+.hero-image{
+    width: 90px;
+    margin: 0 auto;
+    margin-top: 29px;
+    border-radius: 100px;
+    box-shadow: 8px 5px 5px gray;
+
+@media screen and (min-width: 768px) {
+    width: 150px;
+}
+
+@media (min-width:1200px) {
+    width: 200px;
+}
+}
+
+.hero-title{
+    font-family: 'Suravaram', serif;
+    font-size: 48px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+@media screen and (min-width: 768px) {
+        font-size: 96px;
+    }
+}
+
+.hero-slogan{
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    letter-spacing: 0.016em;
+
+    @media screen and (min-width: 768px) {
+        font-size: 40px ;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 48px;
+    }
+
+    &__part{
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0.016em;
+        margin-bottom: 5px;
+
+        @media (min-width: 768px) {
+            font-size: 34px;
+            
+        }
+
+        @media (min-width: 1200px) {
+            font-size: 36px;
+        }
+    }
+}
+
+.hero-button{
+    font-size: 20px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    @media (min-width: 768px) {
+        font-size: 48px;
+    }
+}

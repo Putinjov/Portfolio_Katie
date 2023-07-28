@@ -1,0 +1,172 @@
+.menu {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    display: none;
+  }
+}
+
+.menu .link {
+  padding: 10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.menu .link:hover,
+.menu .link:focus {
+  text-decoration: underline;
+}
+
+.menu-toggle {
+  position: absolute;
+  top: 22px;
+  right: 0px;
+  min-height: 40px;
+  min-width: 40px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+  fill: #212121;
+
+  &:hover,
+  &:focus {
+    fill: $color-accent;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 32px;
+  background-color: $white-color;
+  z-index: 999;
+
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  color: #fff;
+}
+
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+
+  margin-bottom: auto;
+
+  &__item:not(:last-child) {
+      margin-bottom: 32px;
+    }
+
+  &__link {
+      display: block;
+  
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+  
+      color: $color-title-light;
+  
+      text-decoration: none;
+    }
+}
+
+
+.mobile-contact-container {
+  margin-bottom: 64px;
+}
+
+.mobile-contact__item {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+
+  color: $primary-text-color;
+
+  &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+}
+
+
+.mobile-menu__link{
+
+  &:hover,
+  &:focus{
+    color:$color-accent;
+  }
+}
+
+
+.mobile-contact__link--blu {
+  font-size: 34px;
+  line-height: 1.17;
+
+  color: $color-accent;
+}
+
+.mobile-socials {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 20px;
+}
+
+.mobile-socials__item {
+  position: relative;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+
+  color: $color-accent;
+}
+
+.mobile-socials__item:not(:last-child)::after {
+  position: absolute;
+  top: 0;
+  right: 10p;
+
+  content: '';
+  width: 22px;
+  height: 0;
+
+  border: 1px solid #21212133;
+  transform: translateY(10px) rotate(90deg);
+}

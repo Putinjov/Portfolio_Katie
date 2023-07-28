@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Sylfaen";
+  src: url("../../font/sylfaen-webfont.woff2") format("woff2");
+  src: url("../../font/sylfaen-webfont.woff") format("woff");
+}
+
+body {
+font-family: "Sylfaen", 'serif';
+
+
+  color: $primary-text-color;
+  background-color: $white-color;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $color-title-dark;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+  color: currentColor;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

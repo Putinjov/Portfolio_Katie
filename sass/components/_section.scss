@@ -1,0 +1,23 @@
+.section {
+  @include section;
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px);
+  }
+}
+
+.section--not-padding {
+  @include section(0, 94px);
+}
+
+.section--dark {
+  background-color: $secondary-bgc;
+}
+
+.section-title {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 48px;
+  }
+}
