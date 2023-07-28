@@ -54,3 +54,22 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.go-top {
+  position: fixed;
+  z-index: 0;
+  bottom: 15px;
+  right: 25px;
+  fill: rgba($color: #000000, $alpha: 0.5);
+  transition: fill 250ms var(--timing-function);
+
+  &:hover {
+    fill: rgba($color: #0d8f34, $alpha: 1.0);
+    animation: bounce 1200ms;
+    animation-iteration-count: infinite;
+  }
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}

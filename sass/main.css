@@ -192,6 +192,25 @@ img {
   height: auto;
 }
 
+.go-top {
+  position: fixed;
+  z-index: 0;
+  bottom: 15px;
+  right: 25px;
+  fill: rgba(0, 0, 0, 0.5);
+  transition: fill 250ms var(--timing-function);
+}
+.go-top:hover {
+  fill: #0d8f34;
+  animation: bounce 1200ms;
+  animation-iteration-count: infinite;
+}
+@media screen and (max-width: 1199px) {
+  .go-top {
+    display: none;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;

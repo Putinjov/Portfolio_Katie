@@ -14,19 +14,19 @@
         <nav class="site-nav">
             <ul class="nav-list list ">
                 <li class="nav-list__item">
-                    <a href="" class="nav-list__link link">Home</a>
+                    <a href="#" class="nav-list__link link">Home</a>
                 </li>
                 <li class="nav-list__item">
-                    <a href="" class="nav-list__link link">About me</a>
+                    <a href="#about" class="nav-list__link link">About me</a>
                 </li>
                 <li class="nav-list__item">
-                    <a href="" class="nav-list__link link">Services</a>
+                    <a href="#services" class="nav-list__link link">Services</a>
                 </li>
                 <li class="nav-list__item">
-                    <a href="" class="nav-list__link link">Gallery</a>
+                    <a href="#gallery" class="nav-list__link link">Gallery</a>
                 </li>
                 <li class="nav-list__item">
-                    <a href="" class="nav-list__link link">Contacts</a>
+                    <a href="#faq" class="nav-list__link link">FAQ</a>
                 </li>
             </ul>
         </nav>
@@ -53,7 +53,7 @@
                 <button type="button" class="button hero-button" data-modal-open>Order</button>
             </div>
         </section>
-        <section class="section--dark section-about">
+        <section class="section--dark section-about" id="about">
             <div class="container">
                 <h2 class="section-title about-title">About me.</h2>
                 <div class="about-thumb">
@@ -71,7 +71,7 @@
                 </div>
             </div>
         </section>
-        <section class="section section-services">
+        <section class="section section-services" id="services">
             <div class="container">
                 <h2 class="section-title services-title">Services.</h2>
                 <ul class="services-list list">
@@ -123,7 +123,7 @@
                 </ul>
             </div>
         </section>
-        <section class="section--dark section-gallery">
+        <section class="section--dark section-gallery" id="gallery">
             <div class="container">
                 <h2 class="gallery-title">Gallery.</h2>
                 <div class="gallery">
@@ -147,7 +147,7 @@
                 <a class="gallery-open" href="http://">See more</a>
             </div>
         </section>
-        <section class="section section-faq">
+        <section class="section section-faq" id="faq">
             <div class="container">
                 <h2 class="faq-title">FAQ.</h2>
                     <div class="accordion">
@@ -306,30 +306,40 @@
             </button>
             <ul class="mobile-menu">
                 <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link link">Студія</a>
+                    <a href="#about" class="mobile-menu__link link close">About me</a>
                 </li>
                 <li class="mobile-menu__item">
-                    <a href="" class="mobile-menu__link link">Портфоліо</a>
+                    <a href="#services" class="mobile-menu__link link close">Services</a>
                 </li>
-                <li class="mobile-menu__item"><a href="" class="mobile-menu__link link">Контакти</a></li>
+                <li class="mobile-menu__item">
+                    <a href="#gallery" class="mobile-menu__link link close">Gallery</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a href="#faq" class="mobile-menu__link link close">FAQ</a>
+                </li>
             </ul>
             <ul class="mobile-contact mobile-contact-container list">
                 <li class="mobile-contact__item">
-                    <a class="mobile-contact__link mobile-contact__link--blu link" href="">+38 096 111 11 11</a>
+                    <a class="mobile-contact__link mobile-contact__link link" href="tel:+353833315515">+353 83 331 55 15</a>
                 </li>
                 <li class="mobile-contact__item">
-                    <a class="mobile-contact__link link" href="">info@devstudio.com</a>
+                    <a class="mobile-contact__link link" href="mailto:lialkokatya@gmail.com">lialkokatya@gmail.com</a>
                 </li>
             </ul>
             <ul class="mobile-socials list">
                 <li class="mobile-socials__item">
-                    <a class="mobile-socials__link link" href="">Instagram</a>
+                    <a class="mobile-socials__link link" target="_blank" href="https://www.instagram.com/katiiie_photo/">Instagram</a>
                 </li>
                 <li class="mobile-socials__item">
-                    <a class="mobile-socials__link link" href="">Facebook</a>
+                    <a class="mobile-socials__link link" target="_blank" href="https://www.facebook.com/Katiephotoie">Facebook</a>
                 </li>
             </ul>
         </div>
+            <div class="go-top">
+                <a href="#home"><svg class="scroll-btn" width="50" height="50">
+                        <use href="./images/icons.svg#arrow-up"></use>
+                    </svg></a>
+            </div>
     </main>
 </body>
 <script src="./js/accordion.js"></script>
