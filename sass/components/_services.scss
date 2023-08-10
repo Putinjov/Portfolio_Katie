@@ -80,6 +80,13 @@
     font-weight: 900;
     line-height: 2;
     letter-spacing: 0.4px;
+
+    @media (min-width:1200px){
+        &.pos{
+            margin-top: 100px;
+        }
+        
+    }
 }
 
 .price-optional{

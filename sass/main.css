@@ -192,20 +192,34 @@ img {
   height: auto;
 }
 
+@keyframes bounce {
+  0%, 20%, 60%, 100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
 .go-top {
   position: fixed;
   z-index: 0;
   bottom: 15px;
   right: 25px;
-  fill: rgba(0, 0, 0, 0.5);
+  fill: rgb(0, 0, 0);
   transition: fill 250ms var(--timing-function);
 }
 .go-top:hover {
-  fill: #0d8f34;
+  fill: green;
   animation: bounce 1200ms;
   animation-iteration-count: infinite;
 }
-@media screen and (max-width: 1199px) {
+@media (max-width: 1199px) {
   .go-top {
     display: none;
   }
@@ -256,7 +270,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover, .button:focus {
-  background-color: rgba(22, 85, 0, 0.6509803922);
+  background-color: #CEAF07;
 }
 @media screen and (min-width: 768px) {
   .button {
@@ -311,8 +325,6 @@ img {
 .header {
   position: relative;
   align-items: center;
-  border-bottom: 1px solid black;
-  max-width: 90%;
 }
 @media screen and (max-width: 767px) {
   .header {
@@ -323,8 +335,8 @@ img {
 }
 @media screen and (min-width: 768px) {
   .header {
+    padding-top: 20px;
     padding-bottom: 23px;
-    max-width: 100%;
   }
 }
 
@@ -334,21 +346,34 @@ img {
   justify-content: space-between;
 }
 
+.header-container:after {
+  content: "";
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 1px;
+  width: 86%;
+}
+
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
   font-size: 24px;
   font-weight: normal;
 }
-@media screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .logo {
-    align-items: flex-start;
-    justify-content: start;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
   }
 }
-@media screen and (min-width: 1200px) {
+@media (min-width: 1200px) {
   .logo {
+    display: flex;
+    justify-content: flex-start;
     margin-right: 93px;
   }
 }
@@ -620,6 +645,11 @@ img {
   line-height: 2;
   letter-spacing: 0.4px;
 }
+@media (min-width: 1200px) {
+  .item-price.pos {
+    margin-top: 100px;
+  }
+}
 
 .price-optional {
   margin-left: 25px;
@@ -709,6 +739,9 @@ img {
   .gallery-open {
     font-size: 40px;
   }
+}
+.gallery-open:hover, .gallery-open:focus {
+  color: #CEAF07;
 }
 
 .faq-title {
@@ -942,10 +975,13 @@ img {
 
 .menu-toggle {
   position: absolute;
-  top: 22px;
-  right: 0px;
+  top: 25px;
+  right: 25px;
   min-height: 40px;
   min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -984,8 +1020,8 @@ img {
 
 .menu-container .menu-toggle {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 25px;
+  right: 20px;
   color: #fff;
 }
 

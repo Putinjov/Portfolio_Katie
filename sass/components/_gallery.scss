@@ -80,4 +80,9 @@
         @media (min-width: 1200px) {
             font-size: 40px;
         }
+
+    &:hover,
+    &:focus{
+        color:$button-active-color;
+    }
 }

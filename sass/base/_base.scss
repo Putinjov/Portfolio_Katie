@@ -55,21 +55,42 @@ img {
   height: auto;
 }
 
+@keyframes bounce {
+
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
+}
+
 .go-top {
   position: fixed;
   z-index: 0;
   bottom: 15px;
   right: 25px;
-  fill: rgba($color: #000000, $alpha: 0.5);
+  fill: rgb(00, 00, 00);
   transition: fill 250ms var(--timing-function);
 
   &:hover {
-    fill: rgba($color: #0d8f34, $alpha: 1.0);
+    fill: rgba($color: green, $alpha: 1.0);
     animation: bounce 1200ms;
     animation-iteration-count: infinite;
   }
 
-  @media screen and (max-width: 1199px) {
+  @media (max-width: 1199px) {
     display: none;
   }
 }

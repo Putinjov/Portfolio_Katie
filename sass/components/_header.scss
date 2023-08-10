@@ -1,8 +1,6 @@
 .header {
   position: relative;
   align-items: center;
-  border-bottom: 1px solid black;
-  max-width: 90%;
 
 
   @media screen and (max-width: 767px) {
@@ -12,8 +10,8 @@
   }
 
   @media screen and (min-width: 768px) {
+    padding-top: 20px;
     padding-bottom: 23px;
-    max-width: 100%;
   }
 }
 
@@ -23,19 +21,32 @@
   justify-content: space-between;
 }
 
+.header-container:after {
+  content: "";
+  background: black;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  height: 1px;
+  width: 86%;
+}
+
 .logo {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin: 0 auto;
   font-size: 24px;
   font-weight: normal;
 
-  @media screen and (min-width: 768px) {
-    align-items: flex-start;
-    justify-content: start;
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media (min-width: 1200px) {
+    display: flex;
+    justify-content: flex-start;
     margin-right: 93px;
   }
 }

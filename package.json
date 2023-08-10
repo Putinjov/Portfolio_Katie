@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "accordion-js": "^3.3.4"
+    "accordion-js": "^3.3.4",
+    "axios": "^1.4.0"
   }
 }
